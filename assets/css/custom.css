@@ -189,7 +189,25 @@ ul.share li i {
 .docs-article-container {
     max-width: 100%;
 }
-
+@media (max-width: 768px) {
+    .docs-sidebar {
+      padding-top: 0 !important; /* Remove extra space at the top */
+      margin-top: 0 !important; /* Ensure no additional margin at the top */
+    }
+  
+    .docs-sidebar .search-box {
+      margin-top: 0 !important;
+      padding-top: 0 !important;
+    }
+  
+    .docs-sidebar .nav {
+      margin-top: 0 !important; /* Aligns the menu to start from the top */
+    }
+  
+    .container-fluid.docs {
+      padding-top: 0 !important; /* Ensures the entire container is not pushed down */
+    }
+  }
 /*********************************
 * Blog list 
 **********************************/
